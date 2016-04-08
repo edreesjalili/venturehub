@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VentureHub</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.bare.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+    <video autoplay loop poster="img/background.jpg" id="bgvid">
+        <source src="img/vbhbackground.mp4" type="video/mp4">
+    </video>
+    <header id="header">
+        <nav id="navbar">
+            <div id="login-inputs" class="hide">
+                <input placeholder="Email" type="text" class="width-3"/>
+                <input placeholder="Password" type="password" class="width-3">
+                <button outline type="white" id="submit-login">Log In</button>
+                <button outline type="white" round class="right" id="back-login">Back</button>
+            </div>
+            <div id="default-nav">
+                <input id="search" class="width-3" type="search" placeholder="Search"/>
+                <div class="right width-3 text-right">
+                    <button id="vidpause" outline type="white" class="width-4">Pause</button>
+                    <button id="login" outline type="black" class="width-5">Log In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside id="about-us" class="vertical-align text-centered">
+        <p>VentureHub is a platform the connects investor and start-ups together. It is currently in development and will be launching sometime in the near future.</p>
+        <a href="#" id="close-about-us" class="btn width-4" type="white" outline round>X</a>
+    </aside>
+    <aside id="sm-wrap" class="text-centered vertical-align">
+        <a href="#" class="btn width-10" type="black" outline>facebook</a>
+        <a href="#" class="btn width-10" type="black" outline>twitter</a>
+        <a href="#" class="btn width-10" type="black" outline>linkedin</a>
+        <a href="#" class="btn width-10" type="black" outline>instagram</a>
+        <a href="#" id="close-sm-wrap" class="btn width-4" type="black" outline round>X</a>
+    </aside>
+    <main>
+        <row centered>
+            <column cols="6">
+                <div id="site-block" class="veritcal-align width-12">
+                    <div id="site-block-title" class="text-centered">
+                        <img src="img/vhub.png" alt="venturehub-logo"/>
+                    </div>
+                    <div id="su-business" class="sign-up hide">
+                        <form class="forms" id="bo-signup-form">
+                            <fieldset>
+                                <legend>Business Owner Sign Up</legend>
+                                <section>
+                                    <label>Company Name</label>
+                                    <input type="text" name="bo-company-name" id="bo-company-name" class="width-8"/>
+                                 </section>
+                                 <section>
+                                    <label>Email</label>
+                                    <input type="email" name="bo-email" id="bo-email" class="width-8"/>
+                                </section>
+                                <section>
+                                    <label>Password</label>
+                                    <input type="password" name="bo-password" id="bo-password" class="width-12"/>
+                                </section>
+                                <section>
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="bo-confirm-password" id="bo-confirm-password" class="width-12"/>
+                                </section>
+                                <section>
+                                    <button outline round type="white" class="width-12">Sign Up</button>
+                                </section>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div id="su-investor" class="sign-up hide">
+                        <form class="forms" id="in-signup-form">
+                            <fieldset>
+                                <legend>Investor Sign Up</legend>
+                                <section>
+                                    <label>Company Name</label>
+                                    <input type="text" name="in-company-name" id="in-company-name" class="width-8"/>
+                                 </section>
+                                 <section>
+                                    <label>Email</label>
+                                    <input type="email" name="in-email" id="in-email" class="width-8"/>
+                                </section>
+                                <section>
+                                    <label>Password</label>
+                                    <input type="password" name="in-password" id="in-password" class="width-12"/>
+                                </section>
+                                <section>
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="in-confirm-password" id="in-confirm-password" class="width-12"/>
+                                </section>
+                                <section>
+                                    <button outline round type="white" class="width-12">Sign Up</button>
+                                </section>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div id="site-block-content">
+                        <h3 id="motto" class="thin text-centered">Don't invest in your future, invest in the future.</h3>
+                        <h3 class="text-centered">Sign up as a...</h3>
+                        <div id="site-block-button-wrapper" class="text-centered">
+                            <button id="su-business-button" big type="black" class="width-5" upper>Business Owner</button>
+                            <button id="su-investor-button" outline big type="white" class="width-5" upper>Investor</button>
+                        </div>
+                    </div>
+                    <div id="site-block-footer" class="text-centered end">
+                        <a round outline type="white" id="about-us-button" class="width-3 btn" href="#about-us">About Us</a>
+                        <a round type="black" id="social-media-button" class="width-3 btn" href="#sm-wrap">Social Media</a>
+                    </div>
+                </div>
+            </column>
+        </row>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    background: transparent;
+}
+
+#search, #login-inputs input {
+    background: transparent;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+::-ms-input-placeholder {
+    color: #fff;
+}
+:placeholder-shown {
+    color: #fff;
+}
+
+header {
+    padding: 10px;
+    background: rgba(30, 30, 30, .7);
+}
+
+#site-block {
+    min-height: 500px;
+    margin: 24px 0;
+    border: 1px solid #444;
+    background: rgba(30, 30, 30, .7);
+    color: #fff;
+    padding: 50px;
+}
+
+#site-block button, #site-block .btn {
+    margin-bottom: 10px;
+}
+
+#site-block-title {
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+#site-block-title img {
+    min-width: 200px;
+}
+
+#motto {
+    margin-top: -25px !important;
+}
+#site-block-content h3 {
+    color: #eee;
+    margin: 0 0 20px 0;
+}
+
+#site-block-content {
+    margin: 50px auto;
+}
+
+#site-block-footer {
+    height: 40%;
+    padding: 50px 0;
+}
+
+#about-us{
+    height: 200px;
+    margin: 200px 0;
+    border: 1px solid #444;
+    background: rgba(30, 30, 30, .7);
+    color: #fff;
+    padding: 10px;
+}
+
+#sm-wrap{
+    height: 300px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, .7);
+    margin: 200px 0;
+    padding: 10px;
+}
+
+#sm-wrap .btn {
+    margin-bottom: 10px;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: #444;
+    transition: 1s opacity;
+    background-size: cover; 
+}
+
+#vidpause {
+    margin-bottom: 10px;
+}
+.stopfade { opacity: .5; }
+
+div.hide {
+    display: hide;
+}
+
+.sign-up {
+    margin-top: 40px; 
+}
+
+.sign-up form fieldset {
+    border-color: rgba(255, 255, 255, .4)
+}
+
+@media (max-width:1280px) {
+    html {
+         background: url(../img/background.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+    #vidpause {
+        display: none;
+    }
+}
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(../img/background.jpg) #000 no-repeat center center fixed;
+    }
+    #vidpause {
+        display: none;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+@media (max-width:360px) {
+    #site-block-title {
+        margin: 0;
+    }
+}
