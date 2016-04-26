@@ -25,6 +25,7 @@ $(document).ready(function() {
         vid.classList.add("stopfade");
     }
     vid.addEventListener('ended', function() {
+        console.log('ended');
         vid.pause();
         vidFade();
     });
@@ -227,7 +228,8 @@ $(document).ready(function() {
       data.type = "Investor";
       $.post('/signup', data, function(response, status) {
         if(status) {
-          alert('Sign Up Successful');
+          $("#su-thank-you").show();
+          $("#site-block-content").hide();
         } else {
           alert('Sign Up Failed');
           console.log(response);

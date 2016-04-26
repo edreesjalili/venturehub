@@ -87,7 +87,7 @@ header {
     margin-bottom: 10px;
 }
 
-video#bgvid { 
+video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -102,7 +102,7 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: #444;
     transition: 1s opacity;
-    background-size: cover; 
+    background-size: cover;
 }
 
 #vidpause {
@@ -115,11 +115,21 @@ div.hide {
 }
 
 .sign-up {
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 .sign-up form fieldset {
     border-color: rgba(255, 255, 255, .4)
+}
+
+#su-thank-you {
+  padding: 20px;
+  display: none;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin: 20px auto;
+  background: white;
+  color: #7c795d;
 }
 
 @media (max-width:1280px) {
